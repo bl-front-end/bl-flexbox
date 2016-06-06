@@ -1,10 +1,10 @@
-@import "tobe/function";
+@import "bourbon/bourbon";
 .Grid {
     // display: -webkit-flex;
     // display: flex;
     // -webkit-flex-wrap: wrap;
     // flex-wrap: wrap
-    @include display-flex(flex);
+    @include flex(flex);
     @include flex-wrap(wrap);
 }
 
@@ -80,60 +80,69 @@
 
 .Cell {
     // box-sizing: border-box;
-    -webkit-flex-shrink: 0;
-            flex-shrink: 0;
+    @include flex-shrink(0);
     @include box-sizing(border-box);
 }
 
 .Cell.Cell-fill {
     width: 0;
     min-width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
+    @include box-flex(1);
+    @include flex-grow(1);
 }
 
 .Cell.Cell-1of12 {
+	width: -webkit-calc(100%*1/12);
     width: calc(100%*1/12);
 }
 
 .Cell.Cell-2of12 {
+	width: -webkit-calc(100%*2/12);
     width: calc(100%*2/12);
 }
 
 .Cell.Cell-3of12 {
+	width: -webkit-calc(100%*3/12);
     width: calc(100%*3/12);
 }
 
 .Cell.Cell-4of12 {
+	width: -webkit-calc(100%*4/12);
     width: calc(100%*4/12);
 }
 
 .Cell.Cell-5of12 {
+	width: -webkit-calc(100%*5/12);
     width: calc(100%*5/12);
 }
 
 .Cell.Cell-6of12 {
+	width: -webkit-calc(100%*6/12);
     width: calc(100%*6/12);
 }
 
 .Cell.Cell-7of12 {
+	width: -webkit-calc(100%*7/12);
     width: calc(100%*7/12);
 }
 
 .Cell.Cell-8of12 {
+	width: -webkit-calc(100%*8/12);
     width: calc(100%*8/12);
 }
 
 .Cell.Cell-9of12 {
+	width: -webkit-calc(100%*9/12);
     width: calc(100%*9/12);
 }
 
 .Cell.Cell-10of12 {
+	width: -webkit-calc(100%*10/12);
     width: calc(100%*10/12);
 }
 
 .Cell.Cell-11of12 {
+	width: -webkit-calc(100%*11/12);
     width: calc(100%*11/12);
 }
 
