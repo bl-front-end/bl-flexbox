@@ -1,11 +1,11 @@
 .Grid {
-  -webkit-box-flex: flex;
-  -moz-box-flex: flex;
-  box-flex: flex;
-  -webkit-flex: flex;
-  -moz-flex: flex;
-  -ms-flex: flex;
-  flex: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
   box-lines: multiple;

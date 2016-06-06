@@ -4,7 +4,7 @@
     // display: flex;
     // -webkit-flex-wrap: wrap;
     // flex-wrap: wrap
-    @include flex(flex);
+    @include display(flex);
     @include flex-wrap(wrap);
 }
 
